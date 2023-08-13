@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+  font-family: "Dosis", system-ui, sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-icons {
+  transition: 0.5s;
+}
+
+.footer-icons::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #a8a8a7;
+  transition: 0.5s;
+  transform: scale(0.9);
+  z-index: -1;
+}
+
+.footer-icons:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #a8a8a7;
+}
+
+.footer-icons:hover {
+  box-shadow: 0 0 5px #a8a8a7;
+  text-shadow: 0 0 5px #a8a8a7;
+}
+
+.nav-item.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 115%;
+  height: 1px;
+  transform-origin: left;
+  transform: scaleX(1);
+  background: white;
+  transition: transform 300ms ease;
+  z-index: 1;
+}
