@@ -1,4 +1,4 @@
-import PortfolioCard from "@/components/Card";
+import { PortfolioCard } from "@/components";
 import { Container } from "@mui/material";
 
 const Portfolio = () => {
