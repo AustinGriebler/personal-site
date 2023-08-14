@@ -37,6 +37,22 @@ const theme = createTheme({
         },
       },
     },
+    MuiMenu: {
+      styleOverrides: {
+        paper: {
+          backgroundColor: "transparent",
+          boxShadow: "none",
+        },
+      },
+    },
+    MuiList: {
+      styleOverrides: {
+        root: {
+          display: "flex",
+          padding: "0",
+        },
+      },
+    },
     MuiLink: {
       styleOverrides: {
         root: {
