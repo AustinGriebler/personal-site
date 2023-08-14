@@ -1,12 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Home from "./pages/Home.tsx";
 import "./styles/index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Portfolio from "./pages/Portfolio.tsx";
-import Contact from "./pages/Contact.tsx";
-import { FooterMenu, NavigationMenu } from "./components/";
-import ErrorPage from "./pages/ErrorPage.tsx";
+import { FooterMenu, NavigationMenu } from "./components/index.ts";
+import { ErrorPage, Contact, Portfolio, Home } from "./app";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { outlinedInputClasses } from "@mui/material/OutlinedInput";
 

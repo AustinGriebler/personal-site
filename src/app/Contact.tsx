@@ -1,31 +1,8 @@
-import { useState } from "react";
 import TextField from "@mui/material/TextField";
 import { Button, Container } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 
 function Contact() {
-  const [status, setStatus] = useState("Submit");
-  const handleSubmit = async (e: any) => {
-    e.preventDefault();
-    setStatus("Sending...");
-    const { name, email, message } = e.target.elements;
-    let details = {
-      name: name.value,
-      email: email.value,
-      message: message.value,
-    };
-    let response = await fetch("http://localhost:5173/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(details),
-    });
-    setStatus("Submit");
-    let result = await response.json();
-    alert(result.status);
-  };
-
   return (
     <>
       <Container
@@ -33,10 +10,7 @@ function Contact() {
         sx={{ backgroundColor: "transparent", flexDirection: "column" }}
       >
         <h3 className="m-3">Wanna talk? Send me a message!</h3>
-        <form
-          className="grid grid-rows-1 grid-flow-rows gap-2"
-          onClick={handleSubmit}
-        >
+        <form className="grid grid-rows-1 grid-flow-rows gap-2">
           <div className="grid grid-cols-2 gap-2 mb-2">
             <TextField
               id="name"
@@ -68,7 +42,7 @@ function Contact() {
             }}
           >
             {" "}
-            {status}
+            Submit
           </Button>
         </form>
       </Container>

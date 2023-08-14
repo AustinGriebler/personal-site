@@ -15,7 +15,7 @@ const navItems = [
   { path: "/contact", text: "Contact" },
 ];
 
-function NavigationMenu() {
+const NavigationMenu = () => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
   );
@@ -40,7 +40,11 @@ function NavigationMenu() {
             onClick={handleOpenNavMenu}
             color="inherit"
           >
-            {Boolean(anchorElNav) ? <CloseIcon /> : <MenuIcon />}
+            {Boolean(anchorElNav) ? (
+              <CloseIcon fontSize="large" />
+            ) : (
+              <MenuIcon fontSize="large" />
+            )}
           </IconButton>
           <Menu
             id="menu-appbar"
@@ -91,6 +95,6 @@ function NavigationMenu() {
       </Toolbar>
     </Container>
   );
-}
+};
 
 export default NavigationMenu;
