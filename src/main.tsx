@@ -45,7 +45,7 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           display: "flex",
-          padding: "0",
+          padding: "5px 0",
         },
       },
     },
