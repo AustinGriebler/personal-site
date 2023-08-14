@@ -1,6 +1,5 @@
 import { useState } from "react";
 import TextField from "@mui/material/TextField";
-import "../styles/Contact.css";
 import { Button, Container } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 

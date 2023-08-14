@@ -1,6 +1,5 @@
 import { Button, Avatar, Container } from "@mui/material";
 import DownloadIcon from "@mui/icons-material/Download";
-import "../styles/Home.css";
 
 function Home() {
   return (
