@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./styles/index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { FooterMenu, NavigationMenu } from "./components/index.ts";
-import { ErrorPage, Contact, Portfolio, Home } from "./app";
+import { Portfolio, Contact, Home, ErrorPage } from "./app";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { outlinedInputClasses } from "@mui/material/OutlinedInput";
 

@@ -11,13 +11,13 @@ export interface CardProps {
 const PortfolioCard = (prop: CardProps): JSX.Element => {
   return (
     <>
-      <a href={prop.projectLink} className="h-full">
-        <div className="rounded-xl border bg-card text-card-foreground shadow bg-gradient-to-tr from-slate-950 to-slate-800 h-full">
-          <div className="flex flex-col items-center p-6 space-y-1">
+      <a href={prop.projectLink} className="h-full" target="_blank">
+        <div className="rounded-xl border bg-card text-card-foreground shadow bg-gradient-to-tr from-slate-950 to-slate-800 h-full overflow-hidden">
+          <div className="flex flex-col items-center pb-6 space-y-1">
             <div className="h-[200px]">
               <img
                 src={prop.imageLink}
-                className="border border-none rounded h-full object-none object-center"
+                className="border border-none rounded h-full object-cover"
               />
             </div>
             <div className="pt-4">

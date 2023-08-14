@@ -86,7 +86,11 @@ const NavigationMenu = () => {
                 display: "block",
                 fontFamily: "Dosis",
               }}
-              className={window.location.pathname == item.path ? "active" : ""}
+              className={
+                window.location.pathname == item.path
+                  ? "active nav-item"
+                  : "nav-item"
+              }
             >
               {item.text}
             </Link>
