@@ -15,7 +15,7 @@ function Home() {
             sx={{ width: 200, height: 200, my: "2rem" }}
           />
           <h1 className="text-6xl">Hey! 👋 I'm Austin Griebler</h1>
-          <p className="m-4 text-lg">
+          <p className="m-4 text-lg tracking-widest">
             I'm a technically advanced professional with substantial experience
             in front end development and software engineering. I'm an active
             problem-solver and troubleshooter, resolving complex issues via

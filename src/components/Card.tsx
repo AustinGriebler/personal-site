@@ -20,7 +20,7 @@ const PortfolioCard = (prop: CardProps): JSX.Element => {
                 className="border border-none rounded h-full object-cover"
               />
             </div>
-            <div className="pt-4">
+            <div className="p-4">
               <div className="text-3xl">{prop.projectName}</div>
               <div className="text-xl">{prop.projectCompany}</div>
               <div className="flex flex-row flex-wrap justify-center items-center gap-2 pt-2">
