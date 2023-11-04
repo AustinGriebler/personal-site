@@ -31,7 +31,7 @@ function Home() {
               display: "flex",
               fontFamily: "Dosis",
             }}
-            href="../../public/Austin-Griebler-Resume.pdf"
+            href="../../Austin-Griebler-Resume.pdf"
             download="Austin_Griebler_Resume.pdf"
           >
             {" "}
