@@ -22,6 +22,8 @@ function Contact() {
       return;
     }
 
+    event?.cancelable;
+
     setOpen(false);
   };
 
