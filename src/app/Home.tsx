@@ -11,7 +11,7 @@ function Home() {
         <div className="flex justify-center flex-col items-center">
           <Avatar
             alt="Austin Griebler"
-            src="../../public/assets/familypicture.jpg"
+            src="/src/assets/familypicture.jpg"
             sx={{ width: 200, height: 200, my: "2rem" }}
           />
           <h1 className="text-6xl">Hey! 👋 I'm Austin Griebler</h1>
