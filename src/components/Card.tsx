@@ -1,5 +1,3 @@
-import { Chip } from "@mui/material";
-
 export interface CardProps {
   imageLink: string;
   projectName: string;
