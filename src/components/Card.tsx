@@ -5,7 +5,6 @@ export interface CardProps {
   projectName: string;
   projectCompany: string;
   projectLink: string;
-  languages: string[];
 }
 
 const PortfolioCard = (prop: CardProps): JSX.Element => {
@@ -23,18 +22,6 @@ const PortfolioCard = (prop: CardProps): JSX.Element => {
             <div className="p-4">
               <div className="text-3xl">{prop.projectName}</div>
               <div className="text-xl">{prop.projectCompany}</div>
-              <div className="flex flex-row flex-wrap justify-center items-center gap-2 pt-2">
-                {prop.languages.map((language) => (
-                  <Chip
-                    key={language}
-                    label={language}
-                    size="small"
-                    sx={{
-                      backgroundColor: "white",
-                    }}
-                  />
-                ))}
-              </div>
             </div>
           </div>
         </div>
